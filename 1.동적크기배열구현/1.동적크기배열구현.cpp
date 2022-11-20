@@ -9,14 +9,14 @@
 
 using namespace std;
 
-template <size_t N>
-void print(const std::array<int, N>& arr)
-{
-	for (auto ele : arr)
-		cout << ele << ", ";
-
-	cout << endl;
-}
+// template <size_t N>
+// void print(const std::array<int, N>& arr)
+// {
+// 	for (auto ele : arr)
+// 		cout << ele << ", ";
+// 
+// 	cout << endl;
+// }
 
 /// <summary>
 /// Q
@@ -42,7 +42,9 @@ public:
 		data = new T[n];
 
 		for (int i = 0; i < n; i++)
+		{
 			data[i] = other[i];
+		}
 	}
 
 	T& operator[](int index)
@@ -50,6 +52,10 @@ public:
 		return data[index];
 	}
 
+	const T& operator[](int index) const
+	{
+		return data[index];
+	}
 
 	T& at(int index)
 	{
@@ -81,7 +87,7 @@ public:
 	// + 연산   다시
 	friend dynamic_array<T> operator+(const dynamic_array<T>& arr1, dynamic_array<T>& arr2)
 	{
-		dynamic_array<T> result(arr1.size() + arr2.size_t());
+		dynamic_array<T> result(arr1.size() + arr2.size());
 		std::copy(arr1.begin(), arr1.end(), result.begin());
 		std::copy(arr2.begin(), arr2.end(), result.begin() + arr1.size());
 	
@@ -106,7 +112,16 @@ public:
 
 
 
+struct student
+{
+	std::string name;
+	int standard;
+};
 
+std::ostream& operator<<(std::ostream& os, const student& s)
+{
+	return (os << "[" << s.name << ", " << s.standard << "]");
+}
 
 
 int main()
@@ -171,11 +186,48 @@ int main()
 	// 학생데이터를 관리하기 위해 배열과 유사한 자료구조 사용
 	// 다양한 크기 지원, 여러 반을 하나로 합치는 기능도 지원
 
+	int nStudents;
+	std::cout << "1반 학생 수를 입력하세요: ";
+	std::cin >> nStudents;
+	 
+	dynamic_array<student> class1(nStudents);
+	for (int i = 0; i < nStudents; i++)
+	{
+		std::string name;
+		int standard;
+		std::cout << i + 1 << "번째 학생 이름과 나이를 입력하세요: ";
+		std::cin >> name >> standard;
+		class1[i] = student{ name, standard };
+	}
 
 
+	// 배열 크기보다 큰 인덱스의 학생에 접근
+	try
+	{
+		// 
+		//class1[nStudents] = student{ "John", 8 };
+
+		class1.at(nStudents) = student{ "John", 8 };
+	}
+	catch (const std::exception&)
+	{
+		std::cout << "예외 발생!" << std::endl;
+	}
+	catch (...)
+	{
+		std::cout << "예외 발생!" << std::endl;
+	}
 
 
+	// 깊은 복사
+ 	auto class2 = class1;
+	std::cout << "1반을 복사하여 2반 생성: " << class2.to_string() << std::endl;
 
+	// 두 학급을 합ㄹ쳐서 새로운 큰 학급을 생성
+	auto class3 = class1 + class2;
+	std::cout << "1반과 2반을 합쳐 3반 생성: " << class3.to_string() << std::endl;
+
+	return 0;
 
 #pragma endregion
 
