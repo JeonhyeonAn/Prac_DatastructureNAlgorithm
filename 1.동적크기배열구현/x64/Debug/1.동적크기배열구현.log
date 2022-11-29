@@ -1,6 +1,7 @@
-﻿  1.동적크기배열구현.cpp
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(514,5): warning MSB8028: 중간 디렉터리(x64\Debug\)에 다른 프로젝트(1.동적크기배열구현.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
+  1.동적크기배열구현.cpp
 D:\XR_project\Prac_DataStructureNAlgorithm\1.동적크기배열구현\1.동적크기배열구현.cpp(90,1): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 D:\XR_project\Prac_DataStructureNAlgorithm\1.동적크기배열구현\1.동적크기배열구현.cpp(89): message : 클래스 템플릿 멤버 함수 'dynamic_array<student> operator +(const dynamic_array<student> &,dynamic_array<student> &)'을(를) 컴파일하는 중입니다.
 D:\XR_project\Prac_DataStructureNAlgorithm\1.동적크기배열구현\1.동적크기배열구현.cpp(227): message : 컴파일되는 함수 템플릿 인스턴스화 'dynamic_array<student> operator +(const dynamic_array<student> &,dynamic_array<student> &)'에 대한 참조를 확인하세요.
 D:\XR_project\Prac_DataStructureNAlgorithm\1.동적크기배열구현\1.동적크기배열구현.cpp(193): message : 컴파일되는 클래스 템플릿 인스턴스화 'dynamic_array<student>'에 대한 참조를 확인하세요.
-  1.동적크기배열구현.vcxproj -> D:\XR_project\Prac_DataStructureNAlgorithm\x64\Debug\1.동적크기배열구현.exe
+  1.동적크기배열구현.vcxproj -> D:\XR_project\Prac_DataStructureNAlgorithm\x64\Debug\001.동적크기배열구현.exe
