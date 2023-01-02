@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.1.32421.90
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33027.164
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "001.동적크기배열구현", "1.동적크기배열구현\1.동적크기배열구현.vcxproj", "{F9F03DFE-5D14-49F3-8D36-842B50CC8065}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "002.빠르고 범용적인 데이터 저장 컨테이너 만들기", "002.빠르고 범용적인 데이터 저장 컨테이너 만들기\002.빠르고 범용적인 데이터 저장 컨테이너 만들기.vcxproj", "{73FC6947-46AE-46A3-B118-82CFF65C4ABF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "003.연결 리스트에서 remove_if()함수를 이용한 조건부 원소 삭제", "003.연결 리스트에서 remove_if()함수를 이용한 조건부 원소 삭제\003.연결 리스트에서 remove_if()함수를 이용한 조건부 원소 삭제.vcxproj", "{38C0ADB4-278D-4A7E-852D-112DB4C67BC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,14 @@ Global
 		{73FC6947-46AE-46A3-B118-82CFF65C4ABF}.Release|x64.Build.0 = Release|x64
 		{73FC6947-46AE-46A3-B118-82CFF65C4ABF}.Release|x86.ActiveCfg = Release|Win32
 		{73FC6947-46AE-46A3-B118-82CFF65C4ABF}.Release|x86.Build.0 = Release|Win32
+		{38C0ADB4-278D-4A7E-852D-112DB4C67BC5}.Debug|x64.ActiveCfg = Debug|x64
+		{38C0ADB4-278D-4A7E-852D-112DB4C67BC5}.Debug|x64.Build.0 = Debug|x64
+		{38C0ADB4-278D-4A7E-852D-112DB4C67BC5}.Debug|x86.ActiveCfg = Debug|Win32
+		{38C0ADB4-278D-4A7E-852D-112DB4C67BC5}.Debug|x86.Build.0 = Debug|Win32
+		{38C0ADB4-278D-4A7E-852D-112DB4C67BC5}.Release|x64.ActiveCfg = Release|x64
+		{38C0ADB4-278D-4A7E-852D-112DB4C67BC5}.Release|x64.Build.0 = Release|x64
+		{38C0ADB4-278D-4A7E-852D-112DB4C67BC5}.Release|x86.ActiveCfg = Release|Win32
+		{38C0ADB4-278D-4A7E-852D-112DB4C67BC5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
