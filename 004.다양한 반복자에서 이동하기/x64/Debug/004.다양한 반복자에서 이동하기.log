@@ -1,0 +1,6 @@
+﻿  004.다양한 반복자에서 이동하기.cpp
+D:\Practice\Prac_DatastructureNAlgorithm\004.다양한 반복자에서 이동하기\004.다양한 반복자에서 이동하기.cpp(43,6): error C2676: 이항 '+=': 'std::_Flist_iterator<std::_Flist_val<std::_Flist_simple_types<_Ty>>>'이(가) 이 연산자를 정의하지 않거나 미리 정의된 연산자에 허용되는 형식으로의 변환을 정의하지 않습니다.
+          with
+          [
+              _Ty=std::string
+          ]
