@@ -83,7 +83,40 @@ public:
 			cur = cur->next;
 		}
 	}
+
+
+	// 반복자 정의
+	struct cir_list_it
+	{
+	private:
+		node_ptr ptr;
+
+	
+	public:
+		cir_list_it(node_ptr p) : ptr(p) {}
+
+		// 원소 데이터 접근 함수
+		T& operator*()
+		{
+			return *(ptr->data);
+		}
+		
+
+		node_ptr get()
+		{
+			return ptr;
+		}
+
+
+		// 후행 연산자
+		cir_list_it& operator++()
+		{
+			pt
+		}
+	};
 };
+
+
 
 
 int main()
